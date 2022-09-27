@@ -1,0 +1,123 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading{
+text-align: center;
+font-size: xxx-large;
+text-transform: uppercase;
+margin-bottom: 20px;
+margin-top: -7px;
+padding-top: 26px;
+color: black;
+letter-spacing: 4px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 66px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    background: rgba(30, 25, 25, 0.914);
+}
+
+.top-card {
+    background: rgba(255, 255, 255, 0.956);
+    padding: 10px;
+    border-radius: 16px 16px 0px 0px;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: -16px;
+    border: 3px solid rgb(9, 9, 9);
+    border-bottom: 0px;
+}
+
+.name {
+    font-size: x-large;
+    text-transform: uppercase ;
+    margin-bottom: 16px;
+    color: black;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgb(183, 180, 180);
+    margin-top: 8px;
+}
+
+.beer-description {
+    margin: 16px;
+    font-size: large;
+    text-align: left;
+    color: whitesmoke;
+    line-height: 26px;
+    transition: transform .2s;
+}
+
+/* zoom sulla descrizione per facilitare la lettura, in quanto descrizione lunga e scritta piccola per versione desk */
+.beer-description:hover {
+    transform: scale(1.5);
+    background: rgba(30, 25, 25, 0.97);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.description, .pairings{
+    font-weight: bold;
+    text-transform: uppercase ;
+    margin: 16px;
+    font-size: larger;
+    text-align: left;
+    color: whitesmoke;
+    letter-spacing: 3px;
+}
+
+.list{
+    font-size: large;
+    text-align: left;
+    color: whitesmoke;
+    line-height: 26px;
+}
+
+.images {
+    height: 300px;
+}
+
+/* versione MOBILE delle card */
+
+@media only screen and (max-width: 800px)  {
+
+    #cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 75%;
+        text-align: center;
+        padding: 16px;
+        margin-bottom: 36px;
+        border-radius: 16px;
+    }
+
+    .images {
+        height: 180px;
+    }
+
+    .beer-description:hover {
+        transform: scale(1);
+        padding: 0px;
+        background: transparent;
+    }
+}
