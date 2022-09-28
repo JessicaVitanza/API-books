@@ -69,6 +69,10 @@ html, body {
 .subject-info {
     display: flex;
     flex-direction: column;
+    background-color: rgba(43, 26, 5, 0.568);
+    margin: 16px 4px 4px 4px;
+    border-radius: 16px;
+    padding: 12px;
 }
 
 
@@ -77,10 +81,7 @@ html, body {
     margin-top: 8px;
     font-size: medium;
     color: rgb(214, 208, 208);
-    background-color: rgba(43, 26, 5, 0.568);
-    padding: 10px;
-    margin: 16px 4px 4px 4px;
-    border-radius: 16px;
+
 }
 
 .subject:hover {
