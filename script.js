@@ -1,18 +1,19 @@
 //// FUNCTION CHE RICHIEDE I DATI DA UN DATABASE ESTERNO
-let url = 'https://gutendex.com/books/';
+fetch('https://gutendex.com/books/')
+.then(resp => resp.json())
+.then(res => displayBook(res));
 
-fetch(url).then(req => req.json()).then(resp => displayListBook(resp));
 
-// VISUALIZZAZIONE LIBRI IN LISTA
-function displayListBook(books) {
+// DISPLAY DEI LIBRI NEL DIV CON ID CONTAINER NELL'HTML
+function displayBook(books) {
     const container = document.getElementById('container');
     console.log(books.results)
 
-    // CREO LA CARD
+    // CREO LA CARD PER OGNI LIBRO (CICLO FOR OF) CHE CONTERRA' I DATI DEI LIBRI
     for (let book of books.results) {
         const card = document.createElement('div');
         card.classList.add('card');
-
+        
         // CREO UN DIV CONTENENTE TITOLO E IMMAGINE (AI FINI DI CSS)
         const topCard = document.createElement('div');
         topCard.classList.add('top-card');
