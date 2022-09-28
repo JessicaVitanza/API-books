@@ -37,6 +37,13 @@ html, body {
     
 }
 
+.title {
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
 .image {
     height: 340px;
     border-radius: 4px ;
@@ -44,18 +51,13 @@ html, body {
 
 .info {
     background-color: rgba(234, 199, 159, 0.219);
-    border-radius: 26px 26px 16px 16px;
+    border-radius: 16px;
     margin-top: 26px;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-}
-
-
-.title {
-    font-weight: bold;
-    color: white;
-    font-size: x-large;
+    font-size: large;
+    padding: 12px;
 }
 
 .author-info {
@@ -72,6 +74,22 @@ html, body {
 
 .subject {
     line-height: 40px;
+    margin-top: 8px;
+    font-size: medium;
+    color: rgb(214, 208, 208);
+    background-color: rgba(43, 26, 5, 0.568);
+    padding: 10px;
+    margin: 16px 4px 4px 4px;
+    border-radius: 16px;
+}
+
+.subject:hover {
+    transform: scale(1.5);
+    background-color: rgba(34, 20, 4, 0.953);
+    color: whitesmoke;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: small;
 }
 
 
