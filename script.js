@@ -49,10 +49,14 @@ function displayListBook(books) {
            subjectsInfo.classList.add('subject-info');
 
 
-            const subjects = document.createElement('p');
-            subjects.innerHTML = book.subjects;
-            subjects.classList.add('subject');
-            subjectsInfo.appendChild(subjects);
+           const subjectDiv = document.createElement('ul');
+           for (const subject of book.subjects) {
+               const subjectLi = document.createElement('li');
+               subjectLi.innerText = subject;
+               subjectDiv.classList.add('subject');
+               subjectDiv.appendChild(subjectLi);
+               subjectsInfo.appendChild(subjectDiv);
+           }
 
             info.appendChild(subjectsInfo);
 
