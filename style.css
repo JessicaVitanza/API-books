@@ -53,7 +53,7 @@ html, body {
     background-color: rgba(234, 199, 159, 0.219);
     border-radius: 16px;
     margin-top: 26px;
-    color: whitesmoke;
+    color: white;
     display: flex;
     flex-direction: column;
     font-size: large;
@@ -63,6 +63,9 @@ html, body {
 .author-info {
     line-height: 26px;
     margin-bottom: 6px;
+    background-color: rgba(43, 26, 5, 0.568);
+    margin: 4px;
+    border-radius: 16px;
 
 }
 
@@ -70,7 +73,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: rgba(43, 26, 5, 0.568);
-    margin: 16px 4px 4px 4px;
+    margin: 12px 4px 4px 4px;
     border-radius: 16px;
     padding: 12px;
 }
@@ -80,7 +83,7 @@ html, body {
     line-height: 40px;
     margin-top: 8px;
     font-size: medium;
-    color: rgb(214, 208, 208);
+    color: rgba(214, 208, 208, 0.638);
 
 }
 
